@@ -1,0 +1,19 @@
+unique_name: FiveXTD
+object_type: model
+label: FiveXTD
+dimensions:
+  - TstDim
+metrics:
+  - unique_name: m_ahr_fact_random_number_sum
+  - unique_name: MtrMTDCurrent
+  - unique_name: MtrMTD
+  - unique_name: Ancestor
+relationships:
+  - unique_name: ahr_fact_DT_ID_to_DateDim_Date
+    from:
+      dataset: ahr_fact
+      join_columns:
+        - DT_ID
+    to:
+      dimension: DateDim
+      level: Date

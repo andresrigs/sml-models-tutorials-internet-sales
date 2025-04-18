@@ -1,0 +1,10 @@
+unique_name: ahr_fact
+object_type: dataset
+label: ahr_fact
+columns:
+  - name: DT_ID
+    data_type: date
+  - name: random_number
+    data_type: long
+connection_id: con_atscale_default
+table: ahr_fact

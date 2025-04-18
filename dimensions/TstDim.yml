@@ -1,0 +1,18 @@
+unique_name: TstDim
+object_type: dimension
+label: TstDim
+hierarchies:
+  - unique_name: TstH
+    label: TstH
+    levels:
+      - unique_name: TstL
+is_degenerate: true
+level_attributes:
+  - unique_name: TstL
+    label: TstL
+    contains_unique_names: false
+    dataset: ahr_fact
+    key_columns:
+      - random_number
+    name_column: random_number
+type: standard

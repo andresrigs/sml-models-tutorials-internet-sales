@@ -1,0 +1,9 @@
+unique_name: MtrMTDCurrent
+object_type: metric_calc
+label: MtrMTDCurrent
+expression: |-
+  ALLMEMBEREXCEPT( (
+        [Measures].[MtrMTD],  
+        [DateDim].[DateH].[Month].&[202402]),  
+        [TstDim].[TstH])
+is_hidden: false

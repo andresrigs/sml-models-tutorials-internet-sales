@@ -1,0 +1,10 @@
+unique_name: MtrMTD
+object_type: metric_calc
+label: MtrMTD
+expression: |-
+  Aggregate(PeriodsToDate(
+    [DateDim].[DateH].[Month],  
+    [DateDim].[DateH].CurrentMember), 
+    [Measures].[m_ahr_fact_random_number_sum])
+format: general number
+is_hidden: false

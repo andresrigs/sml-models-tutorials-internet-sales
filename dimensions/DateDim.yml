@@ -1,0 +1,46 @@
+unique_name: DateDim
+object_type: dimension
+label: DateDim
+hierarchies:
+  - unique_name: DateH
+    label: DateH
+    levels:
+      - unique_name: Year
+      - unique_name: Month
+      - unique_name: Week
+      - unique_name: Date
+level_attributes:
+  - unique_name: Date
+    label: Date
+    contains_unique_names: false
+    dataset: calendar_data_table
+    is_unique_key: false
+    key_columns:
+      - DT_ID
+    name_column: DT_ID
+    time_unit: day
+  - unique_name: Week
+    label: Week
+    contains_unique_names: false
+    dataset: calendar_data_table
+    key_columns:
+      - WEEK_ID
+    name_column: WEEK_ID
+    time_unit: week
+  - unique_name: Month
+    label: Month
+    contains_unique_names: false
+    dataset: calendar_data_table
+    key_columns:
+      - MONTH_ID
+    name_column: MONTH_ID
+    time_unit: month
+  - unique_name: Year
+    label: Year
+    contains_unique_names: false
+    dataset: calendar_data_table
+    key_columns:
+      - YEAR_ID
+    name_column: YEAR_ID
+    time_unit: year
+type: time

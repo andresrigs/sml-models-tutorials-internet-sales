@@ -1,0 +1,15 @@
+unique_name: Ancestor
+object_type: metric_calc
+label: Ancestor
+expression: >-
+  CASE WHEN [DateDim].[DateH].CurrentMember.Level.name = 'Year' 
+
+  THEN
+  MAX(Descendants([DateDim].[DateH].CurrentMember,[DateDim].[DateH].[Month]),[Measures].[MtrMTDCurrent])
+
+  ELSE (ANCESTOR([DateDim].[DateH].CurrentMember, [DateDim].[DateH].[Month]),
+  [Measures].[MtrMTDCurrent])
+
+  END
+format: general number
+is_hidden: false

@@ -1,0 +1,130 @@
+unique_name: calendar_data_table
+object_type: dataset
+label: calendar_data_table
+columns:
+  - name: DT_KEY
+    data_type: long
+  - name: DT_ID
+    data_type: date
+  - name: DT_DESC
+    data_type: string
+  - name: DT_SHORT_DESC
+    data_type: string
+  - name: DAY_IN_WEEK_NO
+    data_type: long
+  - name: DAY_IN_WEEK_DESC
+    data_type: string
+  - name: DAY_IN_WEEK_SHORT_DESC
+    data_type: string
+  - name: DT_1_DAY_AGO
+    data_type: date
+  - name: DT_LAST_YEAR
+    data_type: date
+  - name: DT_2_YEAR_AGO
+    data_type: date
+  - name: DT_LAST_WEEK
+    data_type: date
+  - name: DT_2_WEEK_AGO
+    data_type: date
+  - name: DT_3_WEEK_AGO
+    data_type: date
+  - name: DT_4_WEEK_AGO
+    data_type: date
+  - name: WEEK_ID
+    data_type: date
+  - name: WEEK_DAY_NO
+    data_type: string
+  - name: WEEK_DESC
+    data_type: string
+  - name: WEEK_SHORT_DESC
+    data_type: date
+  - name: FIRST_DT_IN_WEEK
+    data_type: date
+  - name: LAST_DT_IN_WEEK
+    data_type: date
+  - name: WEEK_LAST_YEAR
+    data_type: date
+  - name: WEEK_2_YEAR_AGO
+    data_type: date
+  - name: WEEK_LAST_WEEK
+    data_type: date
+  - name: WEEK_2_WEEK_AGO
+    data_type: date
+  - name: WEEK_3_WEEK_AGO
+    data_type: date
+  - name: WEEK_4_WEEK_AGO
+    data_type: date
+  - name: MONTH_ID
+    data_type: long
+  - name: MONTH_DAY_NO
+    data_type: long
+  - name: MONTH_DESC
+    data_type: string
+  - name: MONTH_SHORT_DESC
+    data_type: string
+  - name: FIRST_DT_IN_MONTH
+    data_type: date
+  - name: LAST_DT_IN_MONTH
+    data_type: date
+  - name: MONTH_LAST_YEAR
+    data_type: long
+  - name: MONTH_2_YEAR_AGO
+    data_type: long
+  - name: QTR_ID
+    data_type: long
+  - name: QTR_DAY_NO
+    data_type: string
+  - name: QTR_DESC
+    data_type: string
+  - name: QTR_SHORT_DESC
+    data_type: string
+  - name: FIRST_DT_IN_QTR
+    data_type: date
+  - name: LAST_DT_IN_QTR
+    data_type: date
+  - name: QTR_LAST_YEAR
+    data_type: long
+  - name: QTR_2_YEAR_AGO
+    data_type: long
+  - name: SEASON_ID
+    data_type: long
+  - name: SEASON_DAY_NO
+    data_type: string
+  - name: SEASON_DESC
+    data_type: string
+  - name: SEASON_SHORT_DESC
+    data_type: string
+  - name: FIRST_DT_IN_SEASON
+    data_type: date
+  - name: LAST_DT_IN_SEASON
+    data_type: date
+  - name: SEASON_LAST_YEAR
+    data_type: long
+  - name: SEASON_2_YEAR_AGO
+    data_type: long
+  - name: YEAR_ID
+    data_type: long
+  - name: YEAR_DAY_NO
+    data_type: long
+  - name: YEAR_DESC
+    data_type: long
+  - name: YEAR_SHORT_DESC
+    data_type: long
+  - name: FIRST_DT_IN_YEAR
+    data_type: date
+  - name: LAST_DT_IN_YEAR
+    data_type: date
+  - name: YEAR_LAST_YEAR
+    data_type: long
+  - name: YEAR_2_YEAR_AGO
+    data_type: long
+  - name: INSERT_BATCH_ID
+    data_type: string
+  - name: INSERT_LOAD_DT
+    data_type: datetime
+  - name: UPDT_BATCH_ID
+    data_type: string
+  - name: UPDT_LOAD_DT
+    data_type: datetime
+connection_id: con_atscale_default
+table: calendar_data_table

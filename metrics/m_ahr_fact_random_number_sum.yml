@@ -1,0 +1,6 @@
+unique_name: m_ahr_fact_random_number_sum
+object_type: metric
+label: Random Number
+calculation_method: sum
+column: random_number
+dataset: ahr_fact
